@@ -1,6 +1,6 @@
 {
-    "name": "Utilities-Editor",
-    "rootNamespace": "",
+    "name": "unity-utils-Editor",
+    "rootNamespace": "UnityUtils",
     "references": [],
     "includePlatforms": [
         "Editor"
