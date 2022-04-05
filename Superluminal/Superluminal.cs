@@ -7,6 +7,7 @@ using System.Runtime.InteropServices;
 using Unity.Profiling;
 using UnityEngine;
 using UnityEngine.LowLevel;
+using UnityEngine.Profiling;
 
 namespace UnityUtils {
 	/* This class is based heavily on https://github.com/xoofx/SuperluminalPerf which carries the
@@ -104,6 +105,9 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 						updateDelegate = () => {
 							BeginEvent("Frame Start", $"Frame#: {Time.frameCount}");
 							EndEvent();
+
+							Profiler.BeginSample($"Frame#: {Time.frameCount}");
+							Profiler.EndSample();
 						}
 					});
 					initSystem.subSystemList = systemList.ToArray();
