@@ -1,10 +1,10 @@
 {
-    "name": "unity-tils",
+    "name": "unity-utils",
     "rootNamespace": "UnityUtils",
     "references": [],
     "includePlatforms": [],
     "excludePlatforms": [],
-    "allowUnsafeCode": false,
+    "allowUnsafeCode": true,
     "overrideReferences": false,
     "precompiledReferences": [],
     "autoReferenced": true,
